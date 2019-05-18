@@ -11,25 +11,6 @@
 *
 ******************************************************************************/
 
-
-/****************************************************************************
-*HOW THIS PROGRAM WORKS:
-*
-*1)When the user enters the addresses (source and destination )frame will be created 
-*2)When data  is entered the crc will be calculated . 
-*3)After that,the program will change the data and crc from decimal into binary (using the function bin_to_dec)
-*4)Then using the function (toarray) the binary data(which is a single integer)  will be transformed into an array of integers
-*	with each element having only one single integer  
-*5)This array will be added into the frame with the size of data and size of crc
-*6)Then the frame will be sent to the noisy channel which will add errors
-*7)Then the frame(with errors) will forwarded from the channel to the receiver(s) 
-*8)The reciever(s) will check the fram for errors and print(s) the result on the screen 
-******************************************************************************/
-
-
-
-
-
 #include <iostream.h>
 #include <stdlib.h>
 #include <math.h>
